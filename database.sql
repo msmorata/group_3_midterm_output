@@ -17,7 +17,7 @@ CREATE TABLE Sales (
     total_sales DECIMAL(10, 2),
     monthly_sales DECIMAL(10, 2),
     average_sales DECIMAL(10, 2),
-    FOREIGN KEY (product_id) REFERENCES Categories(product_id)
+    FOREIGN KEY (product_id) REFERENCES Products(product_id)
 );
 
 INSERT INTO Categories (category_id, category_name) 
